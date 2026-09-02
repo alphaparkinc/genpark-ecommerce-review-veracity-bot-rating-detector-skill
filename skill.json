@@ -1,0 +1,38 @@
+{
+  "name": "genpark-ecommerce-review-veracity-bot-rating-detector-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Ecommerce customer review veracity and synthetic bot rating detector filtering incentivized spam to compute adjusted ratings.",
+  "author": "genpark",
+  "category": "product-trust",
+  "tags": [
+    "review-veracity",
+    "fakespot-engine",
+    "bot-review-filter",
+    "sentiment-authenticity",
+    "trust-score"
+  ],
+  "inputs": {
+    "product_page_url": {
+      "type": "string"
+    },
+    "total_reviews_crawled_count": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "review_audit_id": {
+      "type": "string"
+    },
+    "adjusted_true_rating_score": {
+      "type": "number"
+    },
+    "veracity_grade_letter": {
+      "type": "string"
+    },
+    "review_authenticity_breakdown_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
